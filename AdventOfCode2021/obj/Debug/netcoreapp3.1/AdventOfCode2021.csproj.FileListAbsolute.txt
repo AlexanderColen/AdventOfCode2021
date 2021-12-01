@@ -1,0 +1,15 @@
+E:\Programming\Projects\DotNETProjects\AdventOfCode2021\AdventOfCode2021\bin\Debug\netcoreapp3.1\AdventOfCode2021.exe
+E:\Programming\Projects\DotNETProjects\AdventOfCode2021\AdventOfCode2021\bin\Debug\netcoreapp3.1\AdventOfCode2021.deps.json
+E:\Programming\Projects\DotNETProjects\AdventOfCode2021\AdventOfCode2021\bin\Debug\netcoreapp3.1\AdventOfCode2021.runtimeconfig.json
+E:\Programming\Projects\DotNETProjects\AdventOfCode2021\AdventOfCode2021\bin\Debug\netcoreapp3.1\AdventOfCode2021.runtimeconfig.dev.json
+E:\Programming\Projects\DotNETProjects\AdventOfCode2021\AdventOfCode2021\bin\Debug\netcoreapp3.1\AdventOfCode2021.dll
+E:\Programming\Projects\DotNETProjects\AdventOfCode2021\AdventOfCode2021\bin\Debug\netcoreapp3.1\AdventOfCode2021.pdb
+E:\Programming\Projects\DotNETProjects\AdventOfCode2021\AdventOfCode2021\obj\Debug\netcoreapp3.1\AdventOfCode2021.csprojAssemblyReference.cache
+E:\Programming\Projects\DotNETProjects\AdventOfCode2021\AdventOfCode2021\obj\Debug\netcoreapp3.1\AdventOfCode2021.AssemblyInfoInputs.cache
+E:\Programming\Projects\DotNETProjects\AdventOfCode2021\AdventOfCode2021\obj\Debug\netcoreapp3.1\AdventOfCode2021.AssemblyInfo.cs
+E:\Programming\Projects\DotNETProjects\AdventOfCode2021\AdventOfCode2021\obj\Debug\netcoreapp3.1\AdventOfCode2021.csproj.CoreCompileInputs.cache
+E:\Programming\Projects\DotNETProjects\AdventOfCode2021\AdventOfCode2021\obj\Debug\netcoreapp3.1\AdventOfCode2021.dll
+E:\Programming\Projects\DotNETProjects\AdventOfCode2021\AdventOfCode2021\obj\Debug\netcoreapp3.1\AdventOfCode2021.pdb
+E:\Programming\Projects\DotNETProjects\AdventOfCode2021\AdventOfCode2021\obj\Debug\netcoreapp3.1\AdventOfCode2021.genruntimeconfig.cache
+E:\Programming\Projects\DotNETProjects\AdventOfCode2021\AdventOfCode2021\bin\Debug\netcoreapp3.1\Day01\Puzzle2.txt
+E:\Programming\Projects\DotNETProjects\AdventOfCode2021\AdventOfCode2021\bin\Debug\netcoreapp3.1\Day01\input.txt
