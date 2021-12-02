@@ -12,6 +12,8 @@ namespace AdventOfCode2021
                 
                 new Day01.Puzzle1();
                 new Day01.Puzzle2();
+                new Day02.Puzzle1();
+                new Day02.Puzzle2();
             } else
             {
                 Console.WriteLine("TODO: Smart way to determine which puzzle to run using command line arguments.");

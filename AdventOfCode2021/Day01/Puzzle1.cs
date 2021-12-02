@@ -1,6 +1,5 @@
 ﻿using AdventOfCode2021.Base;
 using System;
-using System.Collections.Generic;
 using System.IO;
 
 namespace AdventOfCode2021.Day01
