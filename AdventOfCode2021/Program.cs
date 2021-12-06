@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdventOfCode2021.Base;
+using System;
 
 namespace AdventOfCode2021
 {
@@ -8,23 +9,31 @@ namespace AdventOfCode2021
         {
             if (args.Length == 0)
             {
-                Console.WriteLine("TODO: Run all puzzles dynamically using file search?");
-                
-                new Day01.Puzzle1();
-                new Day01.Puzzle2();
-                new Day02.Puzzle1();
-                new Day02.Puzzle2();
-                new Day03.Puzzle1();
-                new Day03.Puzzle2();
-                new Day04.Puzzle1();
-                new Day04.Puzzle2();
-                new Day05.Puzzle1();
-                new Day05.Puzzle2();
-                new Day06.Puzzle1();
-                new Day06.Puzzle2();
-            } else
+                for (var i = 1; i < 26; i++)
+                {
+                    var dayNamespace = $"AdventOfCode2021.Day{i.ToString().PadLeft(2, '0')}";
+                    try
+                    {
+                        Activator.CreateInstance(Type.GetType(dayNamespace + ".Puzzle1"));
+                        Activator.CreateInstance(Type.GetType(dayNamespace + ".Puzzle2"));
+                    }
+                    catch (ArgumentNullException)
+                    {
+                        Console.WriteLine($"\nDay {i} has not yet been implemented.");
+                    }
+                }
+            } else if (args.Length == 1)
             {
-                Console.WriteLine("TODO: Smart way to determine which puzzle to run using command line arguments.");
+                var dayNamespace = $"AdventOfCode2021.Day{args[0].PadLeft(2, '0')}";
+                try
+                {
+                    Activator.CreateInstance(Type.GetType(dayNamespace + ".Puzzle1"));
+                    Activator.CreateInstance(Type.GetType(dayNamespace + ".Puzzle2"));
+                }
+                catch (ArgumentNullException)
+                {
+                    Console.WriteLine($"\nDay {args[0]} does not exist.");
+                }
             }
         }
     }
