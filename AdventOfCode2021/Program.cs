@@ -11,15 +11,21 @@ namespace AdventOfCode2021
             {
                 for (var i = 1; i < 26; i++)
                 {
-                    var dayNamespace = $"AdventOfCode2021.Day{i.ToString().PadLeft(2, '0')}";
+                    var day = i.ToString().PadLeft(2, '0');
+                    var dayNamespace = $"AdventOfCode2021.Day{day}";
+
                     try
                     {
                         Activator.CreateInstance(Type.GetType(dayNamespace + ".Puzzle1"));
-                        Activator.CreateInstance(Type.GetType(dayNamespace + ".Puzzle2"));
+
+                        if (i != 25)
+                        {
+                            Activator.CreateInstance(Type.GetType(dayNamespace + ".Puzzle2"));
+                        }
                     }
                     catch (ArgumentNullException)
                     {
-                        Console.WriteLine($"\nDay {i} has not yet been implemented.");
+                        Console.WriteLine($"\nDay {day} has not yet been (fully) implemented.");
                     }
                 }
             } else if (args.Length == 1)
@@ -28,11 +34,27 @@ namespace AdventOfCode2021
                 try
                 {
                     Activator.CreateInstance(Type.GetType(dayNamespace + ".Puzzle1"));
-                    Activator.CreateInstance(Type.GetType(dayNamespace + ".Puzzle2"));
+
+                    if (args[0] != "25")
+                    {
+                        Activator.CreateInstance(Type.GetType(dayNamespace + ".Puzzle2"));
+                    }
                 }
                 catch (ArgumentNullException)
                 {
                     Console.WriteLine($"\nDay {args[0]} does not exist.");
+                }
+            } else if (args.Length == 2)
+            {
+                var day = args[0].PadLeft(2, '0');
+                var dayNamespace = $"AdventOfCode2021.Day{day}";
+                try
+                {
+                    Activator.CreateInstance(Type.GetType($"{dayNamespace}.Puzzle{args[1]}"));
+                }
+                catch (ArgumentNullException)
+                {
+                    Console.WriteLine($"\nDay {day} Puzzle {args[1]} does not exist.");
                 }
             }
         }
